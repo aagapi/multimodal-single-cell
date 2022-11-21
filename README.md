@@ -48,7 +48,7 @@ Besides providing a performance boost (for one, this is because in batch-wise mo
 ## Neural network architecture choices
 
 For the final models, I used neural nets with a custom loss based on Pearson correlation.
-After the feature engineering part above, my pipeline included a neural architecture search module (wiring style between layers, number of layers, layer sizes, batch norm, dropout, regularization terms etc), and produced a best NN for that particular data shape (feature set). The models I used for final submissions had 3 layers and between 128-512 neurons per layer each. Wiring style was resnet-like.
+After the feature engineering part above, my pipeline included a neural architecture and hyperparameter search module (wiring style between layers, number of layers, layer sizes, batch norm, dropout, regularization terms etc), and produced a best NN for that particular data shape (feature set). The models I used for final submissions had 3 layers and between 128-512 neurons per layer each. Wiring style was resnet-like.
 
 Each model's prediction was an ensemble between all folds of a model (e.g. 9 models in the case of by-batch splitting, 3 models in the case of by-donor). The final submission for Citeseq was an ensemble of 3 models.
 
