@@ -61,7 +61,9 @@ After feature selection and before dimred and building batch features, predictor
 ## References:
 
 [1] Higly Variable Genes - https://scanpy.readthedocs.io/en/stable/generated/scanpy.pp.highly_variable_genes.html
+
 [2] Satija et al. (2015), Spatial reconstruction of single-cell gene expression data, Nature Biotechnology, https://www.nature.com/articles/nbt.3192
+
 [3] Liang et al. (2021), Single-cell manifold-preserving feature selection for detecting rare cell populations, Nature Computational Science (2021), https://www.nature.com/articles/s43588-021-00070-7.epdf?sharing_token=niygJFITqVh3dcpF4yT2udRgN0jAjWel9jnR3ZoTv0NZ3tEAbC7cZVb1eDTUaKur6QGQgwC-DQq_MgHYq-ADYRFISGwVSZWO9toKKpTiPePwLal8xfj2okFMXzheGkFzZUumAVNPWrj9qHb4AgVW_B8iRQVjP3RsaFUJN_2YQO8%3D
 
 
