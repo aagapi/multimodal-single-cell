@@ -11,6 +11,10 @@ Given these aspects, I believe the Citeseq part of this submission could be quit
 I think the main 2 contribution areas were in 1) Feature selection; 2) Encoding of batch effects / features, and batch normalization. I will mainly focus on these, and only briefly discuss the other aspects of the solution. Also, I will mainly discuss the Citeseq data, as I have spent limited time on the Multiome dataset.
 
 Overall, my approach was to include as inputs to the model a mix of dimensionality reduced features (embeddings from Truncated SVD from a larger set of features, call it **_S0_**), along with directly including a smaller subset of selected features (call it **_S1_**), un-reduced. In addition, I added features encoding batch effects (discussed at point 2) below). The idea was that the dimred embeddings over **_S0_** would model the example "data cluster" in a lower dimensional space, while smaller selected set of features in **_S1_** would help more directly predict the targets; and the batch features would help predict (rather than remove) batch effects.
+A diagram of the overall feature engineering pipeline is shown below.
+
+![pipeline2](https://user-images.githubusercontent.com/16798036/203070988-e0894eb5-aac6-4080-98ef-96711a9abc18.png)
+
 
 ## Feature selection
 
