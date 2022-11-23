@@ -6,6 +6,7 @@ The solution is in the bronze medal area (top 6%, place 70/1266). I feel the app
   2. I focused almost entirely on the Citeseq part, very little on Multiome, where I used a single un-blended model for the submission
   3. Uses very little blending compared to top approaches I saw (only 3 models for Citeseq and 1 for Multiome)
   4. While the feature selection model (SCMER) and the final NNs are pretty well tuned via neural architecture search and hyperparameter tuning, the number of dimensions used in dimensionality reduction (Truncated SVD) was not particularly carefully tuned (I used 64, which is less than other competitors typically used).
+
 Given these aspects, I believe the Citeseq part of this submission could be quite competitive, especially if using raw data.
 
 I think the main 2 contribution areas were in 1) Feature selection; 2) Encoding of batch effects / features, and batch normalization. I will mainly focus on these, and only briefly discuss the other aspects of the solution. Also, I will mainly discuss the Citeseq data, as I have spent limited time on the Multiome dataset.
