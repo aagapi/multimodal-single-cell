@@ -1,7 +1,7 @@
 # Single cell modality prediction competition
 
 This is a description of my solution to the Open Problems - Multimodal Single-cell Integration Kaggle competition (www.kaggle.com/competitions/open-problems-multimodal).
-The solution is in the bronze medal area (top 6%, place 70/1266). I feel the approach could have done even better given that:
+The solution is in the bronze medal area (top 5.5%, place 70/1266). I feel the approach could have done even better given that:
   1. It uses only the original preprocessed data, rather than raw counts data (I saw that using raw data seemed to provide a major perf boost for the top contenders, so in retrospect it was a mistake to ignore it when it became available)
   2. I focused almost entirely on the Citeseq part, very little on Multiome, where I used a single un-blended model for the submission
   3. Uses very little blending compared to top approaches I saw (only 3 models for Citeseq and 1 for Multiome)
