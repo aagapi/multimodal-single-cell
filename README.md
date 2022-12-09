@@ -2,10 +2,10 @@
 
 This is a description of my solution to the Open Problems - Multimodal Single-cell Integration Kaggle competition (www.kaggle.com/competitions/open-problems-multimodal).
 The solution is in the upper bronze medal area (top 6%, place 70/1220). I think this approach could have done even better given that:
-  1. It uses only the original preprocessed data, rather than raw counts data (I saw that using raw data seemed to provide a major perf boost for the top contenders, so in retrospect it was a mistake to ignore it when it became available)
+  1. It uses the original preprocessed data provided by the competition, rather than raw counts data that became available towards the end of the competition (I saw that using raw counts data seemed to provide a major perf boost for some of the top contenders)
   2. I focused almost entirely on the Citeseq part, very little on Multiome, where I used a single un-blended model for the submission
   3. Uses very little blending compared to top approaches I saw (only 3 models for Citeseq and 1 for Multiome)
-  4. While the feature selection model (SCMER) and the final NNs are pretty well tuned via neural architecture search and hyperparameter tuning, the number of dimensions used in dimensionality reduction (Truncated SVD) was not particularly carefully tuned (I used 64, which is less than other competitors typically used).
+  4. While the feature selection model (SCMER) and the final NNs are pretty well tuned via neural architecture search and hyperparameter tuning, the number of dimensions used in dimensionality reduction (Truncated SVD) was not particularly extensively tuned (I used 64, which is less than other competitors typically used).
 
 Given these aspects, I believe the Citeseq part of this submission could be quite competitive, especially if using raw data.
 
